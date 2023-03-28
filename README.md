@@ -51,3 +51,6 @@ gcloud run deploy run-sql --image gcr.io/testingiamproject-369302/cloudsqlrun:v1
   --set-env-vars DB_USER="cloud-user" \
   --set-env-vars DB_PASS="Gcp@2022"
 ```
+
+## Note
+Make sure to create VPC connector in the same n/w where ur cloud sql instance is created 
