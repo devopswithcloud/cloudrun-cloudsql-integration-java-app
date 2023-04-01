@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: votes
+  name: votes
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: votes
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: votes
+    spec:
+      containers:
+      - image: devopswithcloudhub/votes:v1
+        name: votes
+        ports:
+        - containerPort: 8080
