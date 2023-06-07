@@ -6,7 +6,7 @@
 --cpu=1 \
 --memory=4GB \
 --region=us-central1 \
---authorized-networks <public_p>/32 \
+--authorized-networks 0.0.0.0/0 \
 --root-password=Gcp@2022
 ```
 
